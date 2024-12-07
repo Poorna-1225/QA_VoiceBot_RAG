@@ -19,7 +19,6 @@ from tqdm import tqdm
 embeddings_dimension = 1536
 raw_data = open("raw_data.txt", "r").read()
 
-
 async def _create_embeddings(
     input: str, http_session: aiohttp.ClientSession
 ) -> openai.EmbeddingData:
